@@ -213,7 +213,7 @@ func (m *MockOIDC) Addr() string {
 	if m.Server == nil {
 		return ""
 	}
-	proto := "http"
+	proto := "https"
 	if m.tlsConfig != nil {
 		proto = "https"
 	}
